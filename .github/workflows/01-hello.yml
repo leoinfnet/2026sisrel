@@ -1,0 +1,9 @@
+name: 01 - Hello
+on: push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibir Mensagem Inicial
+        run: echo "Hello World!"
