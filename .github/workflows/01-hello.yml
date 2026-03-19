@@ -19,3 +19,11 @@ jobs:
         run: pwd
       - name: Checando
         run: ls -la
+
+      - name: Baixando Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+        
+      - name: Verificando Python 
+        run: python -v
