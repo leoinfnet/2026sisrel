@@ -13,3 +13,9 @@ jobs:
          echo "Mostrando data atual: "
          date
          echo "Fim da execucao"
+      - name: Baixando o código
+        uses: actions/checkout@v6
+      - name: Exibindo PATH
+        run: pwd
+      - name: Checando
+        run: ls -la
