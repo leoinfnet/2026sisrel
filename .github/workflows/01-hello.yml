@@ -34,3 +34,8 @@ jobs:
         run: pytest --cov=sisrel --cov-report=html --cov-report=xml
       - name: Checando
         run: ls -la
+      - name: Exportar HTML
+        uses: actions/upload-artifact@v4
+        with:
+          path: htmlcov/
+          name: coverage-html
