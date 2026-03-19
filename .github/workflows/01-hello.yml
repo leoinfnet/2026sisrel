@@ -7,3 +7,9 @@ jobs:
     steps:
       - name: Exibir Mensagem Inicial
         run: echo "Hello World!"
+      - name: Executar varios comandos
+        run: |
+         echo "Iniciando step"
+         echo "Mostrando data atual: "
+         date
+         echo "Fim da execucao"
