@@ -11,8 +11,7 @@ def test_calcular_media_funciona():
         Venda("Camiseta", 100.0, datetime(2024, 1, 10)),
         Venda("Calça", 300.0, datetime(2024, 1, 11)),
     ]
-    assert False
-    #assert calcular_media(vendas) == pytest.approx(200.0)
+    assert calcular_media(vendas) == pytest.approx(200.0)
 
 
 def test_calcular_media_lista_vazia_erro():
